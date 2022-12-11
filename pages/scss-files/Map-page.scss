@@ -1,0 +1,965 @@
+/* -------------------------------- Миксины -------------------------------- */
+
+@mixin common-marg-wid {
+  margin: 0 auto;
+  width: 1400px;
+}
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin common-indent {
+  width: 100%;
+  margin-top: 150px;
+}
+@mixin common-h2 {
+  color: #00a092;
+  font: 600 54px/66px Montserrat;
+  text-transform: uppercase;
+}
+@mixin common-h2-up-wh {
+  font: 600 54px/66px Montserrat;
+  color: #fff;
+  text-transform: uppercase;
+}
+@mixin common-p {
+  font: 400 18px/27px Montserrat;
+}
+@mixin p-22px {
+  font: 400 26px/33.8px Montserrat;
+}
+@mixin common-p-white {
+  font: 400 26px/33.8px Montserrat;
+  color: #fff;
+}
+@mixin square-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px 60px 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+@mixin transporent-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 359px;
+  height: 74px;
+  font: 600 18px/22px Montserrat;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ----------------------------- Общие стили ----------------------------- */
+
+/* Блок соц сетей */
+.block-social-links {
+  display: flex;
+  /* иконки общие стили */
+  .common-soc-link {
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #005a53;
+    a svg {
+      transition: all ease-in-out 0.2s;
+    }
+    a svg:hover {
+      opacity: 0.6;
+    }
+  }
+}
+/* Оранжевая кнопка */
+.orange-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 240px;
+  height: 74px;
+  border-radius: 5px;
+  font: 600 18px/22px Montserrat;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #f58021;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 320px) {
+  .orange-button {
+    width: 300px;
+    height: 45px;
+  }
+}
+.orange-button:hover {
+  background-color: #d26004;
+}
+
+/* Прозрачная кнопка c оранжевым квадратом */
+.transporent-button-orange-square {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 14px;
+  width: 320px;
+  height: 74px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  font: 600 18px/22px Montserrat;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  .transporent-button-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: #f58021;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.transporent-button-orange-square:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.transporent-button-orange-square:hover .transporent-button-arrow {
+  background-color: #d26004;
+}
+
+/* Прозрачная кнопка темная */
+.transporent-button-dark {
+  @include transporent-button;
+  color: #20113d;
+  border: 1px solid #20113d;
+  svg path {
+    transition: all 0.2s ease-in-out;
+  }
+}
+.transporent-button-dark:hover {
+  background-color: #20113d;
+  color: #fff;
+}
+.transporent-button-dark:hover svg path {
+  fill: #fff;
+}
+
+/* Прозрачная кнопка светлая */
+.transporent-button-white {
+  @include transporent-button;
+  color: #fff;
+  border: 1px solid #fff;
+  svg path {
+    fill: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.transporent-button-white:hover {
+  background-color: #fff;
+  color: #20113d;
+}
+.transporent-button-white:hover svg path {
+  fill: #20113d;
+}
+
+/* кнопка, стрелка темная */
+.square-arrow-dark {
+  @include square-arrow;
+  border: 1px solid #20113d;
+  svg path {
+    transition: all ease-in-out 0.2s;
+  }
+}
+.square-arrow-dark:hover {
+  background-color: #20113d;
+}
+.square-arrow-dark:hover svg path {
+  fill: #fff;
+}
+
+/* кнопка, стрелка светлая */
+.square-arrow-white {
+  @include square-arrow;
+  border: 1px solid #fff;
+
+  svg path {
+    fill: #fff;
+    transition: all ease-in-out 0.2s;
+  }
+}
+.square-arrow-white:hover {
+  background-color: #fff;
+}
+.square-arrow-white:hover svg path {
+  fill: #20113d;
+}
+
+/* оранжевый текст ссылка со стрелкой */
+.text-link-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 74px;
+  font: 600 18px/22px Montserrat;
+  text-transform: uppercase;
+  color: #f58021;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  svg {
+    margin-left: 10px;
+  }
+  svg path {
+    transition: all 0.2s ease-in-out;
+  }
+}
+.text-link-arrow:hover {
+  background-color: #f58021;
+  color: #fff;
+}
+.text-link-arrow:hover svg path {
+  fill: #fff;
+}
+
+/* ------------------- Обертка всего содержимого страницы ------------------- */
+.wrapper-common-content {
+  width: 100%;
+}
+
+/* ---------------------------- Верхний блок ---------------------------- */
+
+/* Фон header */
+.background-header {
+  background: #f58021;
+  /* Блок header */
+  header {
+    // outline: 1px solid rgb(3, 255, 3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include common-marg-wid;
+    height: 110px;
+    /* Блок с логотипом */
+    .logo {
+      flex-grow: 0.8;
+    }
+    /* Блок меню */
+    .menu {
+      display: flex;
+      /* no-interactive */
+      li.no-interactive a {
+        color: #00a092;
+        cursor: inherit;
+      }
+      /* ссылки меню общие стили */
+      .head-menu-link {
+        margin-left: 50px;
+        a {
+          font: 600 18px Montserrat;
+          text-transform: uppercase;
+          color: #000;
+          transition: all ease-in-out 0.2s;
+        }
+        a:hover {
+          color: #00a092;
+        }
+      }
+    }
+  }
+}
+/* brackpoint Фон header */
+@media (max-width: 1200px) {
+  .background-header {
+    header {
+      width: 1000px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .background-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    header {
+      width: 640px;
+      padding-left: 20px;
+      /* Блок меню */
+      nav .menu {
+        position: relative;
+        width: 30px;
+        height: 26px;
+        overflow: hidden;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+      }
+      nav .menu::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+      }
+      nav .menu:hover {
+        cursor: pointer;
+      }
+      /* Блок соц сетей */
+      nav .block-social-links {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .background-header {
+    header {
+      width: 320px;
+      padding-left: 20px;
+      /* Блок меню */
+      nav .menu {
+        width: 22px;
+        height: 30px;
+        border-top: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+      nav .menu::after {
+        content: "";
+        top: 11px;
+        width: 22px;
+        height: 3px;
+      }
+    }
+  }
+}
+
+/* ---------------------------- Основное содержание ---------------------------- */
+main {
+  width: 100%;
+  background-color: #fff;
+  .main__inner-wrap {
+    @include common-marg-wid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main__main-title {
+      width: 600px;
+      margin: 40px 0 70px 0;
+      font: 600 54px/66px Montserrat;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .main__block-map {
+      width: 1400px;
+      height: 912px;
+      margin-bottom: 150px;
+      background: url(../../assets/images/map-page-images/Map.png) center 0 /
+        1406px 912px no-repeat;
+      position: relative;
+
+      .coomon-icon {
+        width: 81px;
+        height: 122px;
+        position: absolute;
+        // transition: all 0.2s ease-in-out;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      /* 1 */
+      .main__icon-1 {
+        background: url(../../assets/images/map-page-images/Eagle.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        top: 420px;
+        left: 170px;
+      }
+      .main__icon-1:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Eagle.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 385px;
+        left: 131px;
+      }
+      /* 2 */
+      .main__icon-2 {
+        background: url(../../assets/images/map-page-images/Alligator.png)
+            center 20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        top: 420px;
+        left: 295px;
+      }
+      .main__icon-2:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Alligator.png)
+            center 55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 385px;
+        left: 256px;
+      }
+      /* 3 */
+      .main__icon-3 {
+        background: url(../../assets/images/map-page-images/Lion.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        position: absolute;
+        top: 450px;
+        left: 580px;
+      }
+      .main__icon-3:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Lion.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 415px;
+        left: 540px;
+      }
+      /* 4 */
+      .main__icon-4 {
+        background: url(../../assets/images/map-page-images/Gorilla.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        position: absolute;
+        top: 479px;
+        left: 690px;
+      }
+      .main__icon-4:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Gorilla.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 444px;
+        left: 650px;
+      }
+      /* 5 */
+      .main__icon-5 {
+        background: url(../../assets/images/map-page-images/Lemur.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        position: absolute;
+        top: 599px;
+        left: 793px;
+      }
+      .main__icon-5:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Lemur.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 564px;
+        left: 754px;
+      }
+      /* 6 */
+      .main__icon-6 {
+        background: url(../../assets/images/map-page-images/Panda.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        position: absolute;
+        top: 352px;
+        left: 950px;
+      }
+      .main__icon-6:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Panda.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 317px;
+        left: 910px;
+      }
+      /* 7 */
+      .main__icon-7 {
+        background: url(../../assets/images/map-page-images/tiger.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        position: absolute;
+        top: 510px;
+        left: 1013px;
+      }
+      .main__icon-7:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/tiger.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 475px;
+        left: 973px;
+      }
+      /* 8 */
+      .main__icon-8 {
+        background: url(../../assets/images/map-page-images/Coala.png) center
+            20px no-repeat,
+          url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+        position: absolute;
+        top: 624px;
+        left: 1144px;
+      }
+      .main__icon-8:hover {
+        width: 160px;
+        height: 204px;
+        background: url(../../assets/images/map-page-images/Coala.png) center
+            55px no-repeat,
+          url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+          url(../../assets/images/map-page-images/Tag2.png) center 9px no-repeat;
+        cursor: pointer;
+        top: 589px;
+        left: 1104px;
+      }
+    }
+  }
+}
+/* brackpoint main */
+@media (max-width: 1200px) {
+  main {
+    .main__inner-wrap {
+      width: 1000px;
+      .main__block-map {
+        width: 1198px;
+        height: 777;
+        margin-bottom: 99px;
+        background: url(../../assets/images/map-page-images/Map.png) center 0 /
+          1198px 777px no-repeat;
+        position: relative;
+
+        /* 1 */
+        .main__icon-1 {
+          background: url(../../assets/images/map-page-images/Eagle.png) center
+              20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          top: 340px;
+          left: 140px;
+        }
+        .main__icon-1:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Eagle.png) center
+              55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 305px;
+          left: 100px;
+        }
+        /* 2 */
+        .main__icon-2 {
+          background: url(../../assets/images/map-page-images/Alligator.png)
+              center 20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          top: 340px;
+          left: 250px;
+        }
+        .main__icon-2:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Alligator.png)
+              center 55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 305px;
+          left: 210px;
+        }
+        /* 3 */
+        .main__icon-3 {
+          background: url(../../assets/images/map-page-images/Lion.png) center
+              20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          position: absolute;
+          top: 370px;
+          left: 480px;
+        }
+        .main__icon-3:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Lion.png) center
+              55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 335px;
+          left: 440px;
+        }
+        /* 4 */
+        .main__icon-4 {
+          background: url(../../assets/images/map-page-images/Gorilla.png)
+              center 20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          position: absolute;
+          top: 400px;
+          left: 590px;
+        }
+        .main__icon-4:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Gorilla.png)
+              center 55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 365px;
+          left: 551px;
+        }
+        /* 5 */
+        .main__icon-5 {
+          background: url(../../assets/images/map-page-images/Lemur.png) center
+              20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          position: absolute;
+          top: 510px;
+          left: 675px;
+        }
+        .main__icon-5:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Lemur.png) center
+              55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 475px;
+          left: 635px;
+        }
+        /* 6 */
+        .main__icon-6 {
+          background: url(../../assets/images/map-page-images/Panda.png) center
+              20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          position: absolute;
+          top: 260px;
+          left: 850px;
+        }
+        .main__icon-6:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Panda.png) center
+              55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 225px;
+          left: 811px;
+        }
+        /* 7 */
+        .main__icon-7 {
+          background: url(../../assets/images/map-page-images/tiger.png) center
+              20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          position: absolute;
+          top: 430px;
+          left: 863px;
+        }
+        .main__icon-7:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/tiger.png) center
+              55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 395px;
+          left: 824px;
+        }
+        /* 8 */
+        .main__icon-8 {
+          background: url(../../assets/images/map-page-images/Coala.png) center
+              20px no-repeat,
+            url(../../assets/images/map-page-images/Tag1.png) no-repeat;
+          position: absolute;
+          top: 536px;
+          left: 996px;
+        }
+        .main__icon-8:hover {
+          width: 160px;
+          height: 204px;
+          background: url(../../assets/images/map-page-images/Coala.png) center
+              55px no-repeat,
+            url(../../assets/images/map-page-images/Tag3.png) no-repeat,
+            url(../../assets/images/map-page-images/Tag2.png) center 9px
+              no-repeat;
+          cursor: pointer;
+          top: 501px;
+          left: 957px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  main {
+    .main__inner-wrap {
+      width: 640px;
+      .main__main-title {
+        margin: 30px 0 50px 0;
+        font-size: 42px;
+        line-height: 51px;
+      }
+
+      .main__block-map {
+        transform: scale(0.53);
+        margin: -180px 0 -100px 0;
+        height: 777px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  main {
+    .main__inner-wrap {
+      width: 320px;
+      .main__main-title {
+        width: 300px;
+        margin: 20px 0 30px 0;
+        font-size: 26px;
+        line-height: 130%;
+        color: #20113d;
+      }
+
+      .main__block-map {
+        transform: scale(0.3);
+        margin: -280px 0 -220px 0;
+        height: 777px;
+      }
+    }
+  }
+}
+
+/* --------------------------------- подвал --------------------------------- */
+
+footer {
+  height: 329px;
+  background-color: #20113d;
+}
+.inner-footer {
+  @include common-marg-wid;
+}
+/*  блок с сайтами  */
+.inner-footer__sites {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 214px;
+  border-bottom: 1px solid #fff;
+  .inner-footer__block-lable {
+    .inner-footer__oline-zoo {
+      margin-right: 60px;
+    }
+    .inner-footer__yem-digital {
+      margin-right: 60px;
+    }
+    .inner-footer__rsschool {
+    }
+  }
+  /* навигация */
+  .inner-footer__block-links {
+    ul {
+      display: flex;
+      .link {
+        margin: 0 23px;
+        a {
+          font: 600 18px/22px Montserrat;
+          text-transform: uppercase;
+          color: #fff;
+          transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+          color: #00a092;
+        }
+      }
+    }
+  }
+  /* блок с кнопкой */
+  .inner-footer__block-button {
+  }
+}
+/* блок с копирайтами */
+.inner-footer__copiright-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+  .inner-footer__block-copiright {
+    display: flex;
+    color: #fff;
+    p {
+      @include common-p;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .inner-footer {
+    width: 1200px;
+    /*  блок с сайтами  */
+    .inner-footer__sites {
+      padding: 0 40px;
+      /* навигация */
+      .inner-footer__block-links {
+        ul {
+          display: flex;
+          .link {
+            margin: 0 10px;
+          }
+        }
+      }
+      .inner-footer__block-lable {
+        .inner-footer__oline-zoo {
+          margin-right: 30px;
+        }
+        .inner-footer__yem-digital {
+          margin-right: 30px;
+        }
+      }
+    }
+    .inner-footer__copiright-social {
+      padding: 0 40px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  footer {
+    height: 100%;
+    .inner-footer {
+      width: 640px;
+      .inner-footer__sites {
+        flex-direction: column;
+        height: 346px;
+        padding: 50px 0;
+        .inner-footer__block-lable {
+          .inner-footer__oline-zoo {
+          }
+          .inner-footer__yem-digital {
+          }
+          .inner-footer__rsschool {
+          }
+        }
+        .inner-footer__block-links {
+          .link {
+          }
+        }
+        .inner-footer__block-button {
+          .transporent-button-white {
+          }
+        }
+      }
+
+      .inner-footer__copiright-social {
+        flex-direction: column-reverse;
+        height: 200px;
+        padding: 50px 0;
+        .inner-footer__block-copiright {
+          p {
+            margin: 0 24px;
+          }
+        }
+        .block-social-links {
+          .common-soc-link {
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  footer {
+    height: 100%;
+    .inner-footer {
+      width: 320px;
+      .inner-footer__sites {
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 0 30px 0;
+        border-bottom: none;
+        .inner-footer__block-lable {
+          display: flex;
+          flex-direction: column;
+          .inner-footer__com {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 30px 0;
+          }
+          .inner-footer__oline-zoo {
+          }
+          .inner-footer__yem-digital {
+          }
+          .inner-footer__rsschool {
+          }
+        }
+        .inner-footer__block-links {
+          margin-bottom: 30px;
+          .link {
+            margin: 0 7.5px;
+            a {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+        .inner-footer__block-button {
+          .transporent-button-white {
+            width: 300px;
+            height: 45px;
+          }
+        }
+      }
+
+      .inner-footer__copiright-social {
+        height: 100%;
+        padding: 0;
+        .inner-footer__block-copiright {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 50px;
+          p {
+            margin: 30px 0 0 0;
+          }
+        }
+        .block-social-links {
+          display: flex;
+          justify-content: center;
+          width: 320px;
+          border-bottom: 1px solid #fff;
+          .common-soc-link {
+            margin: 0 25px 32px 25px;
+          }
+        }
+      }
+    }
+  }
+}

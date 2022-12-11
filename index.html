@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="pages/css-files/Landing.css">
+   <link rel="stylesheet" href="pages/css-files/reset.css">
+   <link rel="stylesheet" href="pages/css-files/fonts.css">
+   <link rel="icon" href="assets/images/Favicon.png">
+   <title>Online ZOO</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+   <!-- Обертка всего содержимого страницы -->
+   <div class="wrapper-common-content">
+
+      <!-- --------------------------- Верхний блок --------------------------- -->
+         <!-- Фон header -->
+         <div class="background-header">
+            <!-- Блок header -->
+            <header>
+               <!-- Блок с логотипом -->
+               <h1 class="logo">
+                  <a href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+               </h1>
+               <!-- Блок меню -->
+               <nav>
+                  <ul class="menu">
+                     <li class="head-menu-link no-interactive"><a href="#">About</a></li>
+                     <li class="head-menu-link"><a href="pages/html-files/Map-page.html">map</a></li>
+                     <li class="head-menu-link"><a href="pages/html-files/Zoos-page-panda.html">Zoos</a></li>
+                     <li class="head-menu-link"><a href="pages/html-files/Contact-us.html">Contact us</a></li>
+                     <li class="head-menu-link"><a href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0%3A1" target="_blank">Design</a></li>
+                  </ul>
+               </nav>
+               <!-- Блок соц сетей -->
+               <nav>
+                  <ul class="block-social-links">
+                     <!-- иконка YouTube -->
+                     <li class="common-soc-link">
+                        <a href="https://www.youtube.com/" target="_blank">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="20" fill="#FF0000"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3005 12.3781C31.6996 12.7772 31.9872 13.2739 32.1346 13.8187C32.9835 17.2357 32.7873 22.6324 32.1511 26.1813C32.0037 26.7261 31.7161 27.2228 31.317 27.6219C30.9179 28.021 30.4212 28.3086 29.8764 28.456C27.8819 29 19.8544 29 19.8544 29C19.8544 29 11.8269 29 9.8324 28.456C9.28759 28.3086 8.79089 28.021 8.39179 27.6219C7.99269 27.2228 7.70511 26.7261 7.55768 26.1813C6.70383 22.7791 6.9379 17.3791 7.5412 13.8352C7.68862 13.2903 7.97621 12.7936 8.37531 12.3945C8.77441 11.9954 9.2711 11.7079 9.81592 11.5604C11.8104 11.0165 19.8379 11 19.8379 11C19.8379 11 27.8654 11 29.8599 11.544C30.4047 11.6914 30.9014 11.979 31.3005 12.3781ZM23.9423 20L17.283 23.8571V16.1428L23.9423 20Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <!-- иконка Instagram -->
+                     <li class="common-soc-link">
+                        <a href="https://www.instagram.com/" target="_blank">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="20" fill="#C13584"/>
+                              <path d="M20 10.1622C23.2041 10.1622 23.5837 10.1744 24.849 10.2321C26.019 10.2855 26.6544 10.481 27.0773 10.6453C27.6374 10.863 28.0371 11.123 28.457 11.5429C28.877 11.9629 29.137 12.3626 29.3547 12.9227C29.519 13.3456 29.7145 13.981 29.7679 15.1509C29.8256 16.4163 29.8378 16.7958 29.8378 19.9999C29.8378 23.2041 29.8256 23.5836 29.7679 24.849C29.7145 26.019 29.519 26.6543 29.3547 27.0772C29.137 27.6373 28.877 28.0371 28.4571 28.457C28.0371 28.8769 27.6374 29.1369 27.0773 29.3546C26.6544 29.519 26.019 29.7144 24.849 29.7678C23.5839 29.8255 23.2044 29.8378 20 29.8378C16.7956 29.8378 16.4162 29.8255 15.151 29.7678C13.981 29.7144 13.3456 29.519 12.9227 29.3546C12.3626 29.1369 11.9629 28.8769 11.543 28.457C11.1231 28.0371 10.863 27.6373 10.6453 27.0772C10.481 26.6543 10.2855 26.019 10.2321 24.849C10.1744 23.5836 10.1622 23.2041 10.1622 19.9999C10.1622 16.7958 10.1744 16.4163 10.2321 15.1509C10.2855 13.981 10.481 13.3456 10.6453 12.9227C10.863 12.3626 11.123 11.9629 11.543 11.543C11.9629 11.123 12.3626 10.863 12.9227 10.6453C13.3456 10.481 13.981 10.2855 15.151 10.2321C16.4163 10.1744 16.7959 10.1622 20 10.1622ZM20 8C16.741 8 16.3323 8.01381 15.0524 8.07221C13.7752 8.13047 12.9028 8.33334 12.1395 8.62996C11.3504 8.93663 10.6812 9.34694 10.0141 10.0141C9.34695 10.6812 8.93663 11.3504 8.63001 12.1395C8.33334 12.9028 8.13047 13.7751 8.07221 15.0524C8.01381 16.3323 8 16.741 8 19.9999C8 23.259 8.01381 23.6676 8.07221 24.9475C8.13047 26.2248 8.33334 27.0971 8.63001 27.8604C8.93663 28.6495 9.34695 29.3187 10.0141 29.9859C10.6812 30.653 11.3504 31.0633 12.1395 31.3699C12.9028 31.6666 13.7752 31.8694 15.0524 31.9277C16.3323 31.9861 16.741 31.9999 20 31.9999C23.259 31.9999 23.6677 31.9861 24.9476 31.9277C26.2248 31.8694 27.0972 31.6666 27.8605 31.3699C28.6496 31.0633 29.3188 30.653 29.9859 29.9859C30.653 29.3187 31.0634 28.6495 31.37 27.8604C31.6667 27.0971 31.8695 26.2248 31.9278 24.9475C31.9862 23.6676 32 23.259 32 19.9999C32 16.741 31.9862 16.3323 31.9278 15.0524C31.8695 13.7751 31.6667 12.9028 31.37 12.1395C31.0634 11.3504 30.653 10.6812 29.9859 10.0141C29.3188 9.34694 28.6496 8.93663 27.8605 8.62996C27.0972 8.33334 26.2248 8.13047 24.9476 8.07221C23.6677 8.01381 23.259 8 20 8Z" fill="white"/>
+                              <path d="M20.0054 13.8433C16.6021 13.8433 13.8433 16.6021 13.8433 20.0054C13.8433 23.4087 16.6021 26.1675 20.0054 26.1675C23.4087 26.1675 26.1676 23.4087 26.1676 20.0054C26.1676 16.6021 23.4087 13.8433 20.0054 13.8433ZM20.0054 24.0054C17.7963 24.0054 16.0054 22.2145 16.0054 20.0054C16.0054 17.7963 17.7963 16.0054 20.0054 16.0054C22.2146 16.0054 24.0054 17.7963 24.0054 20.0054C24.0054 22.2145 22.2146 24.0054 20.0054 24.0054Z" fill="white"/>
+                              <path d="M27.8507 13.5963C27.8507 14.3915 27.206 15.0363 26.4107 15.0363C25.6154 15.0363 24.9707 14.3915 24.9707 13.5963C24.9707 12.801 25.6154 12.1562 26.4107 12.1562C27.206 12.1562 27.8507 12.801 27.8507 13.5963Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <!-- иконка Facebook -->   
+                     <li class="common-soc-link">  
+                        <a href="https://facebook.com/" target="_blank">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="20" fill="#3B5998"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M25.315 12.9578C24.6917 12.8331 23.8498 12.74 23.3204 12.74C21.8867 12.74 21.7936 13.3633 21.7936 14.3607V16.1361H25.3774L25.065 19.8137H21.7936V31H17.3063V19.8137H15V16.1361H17.3063V13.8613C17.3063 10.7453 18.7708 9 22.4477 9C23.7252 9 24.6602 9.187 25.8753 9.43633L25.315 12.9578Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+
+                  </ul>
+               </nav>
+            </header>
+         </div>
+         
+      <!-- ------------------------ Основное содержание ------------------------ -->
+      <main>
+
+         <!-- Блок жиотные онлайн -->
+         <section class="block-animal-online">
+            <div class="block-animal-online_wrapper">
+               <h1 class="animal-title">Watch your favorite animal online</h1>
+               <p class="animal-text">Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.</p>
+               <a class="block-animal-but orange-button" href="pages/html-files/Zoos-page-panda.html">VIEW LIVE CAM
+                  <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="white"/>
+                  </svg>
+               </a>
+            </div>
+         </section>
+
+         <!-- блок welcome -->
+         <section class="block-welcome">
+
+            <div class="block-welcome-inner-wrapper">
+
+               <div class="block-welcome__top-block">
+                  <div class="block-welcome__top-b-text">
+                     <h2 class="block-welcome__top-b-t-title">Welcome to the Online Zoo!</h2>
+                     <p class="block-welcome__top-b-t-paragraph">On our website, using live webcams, fans of all ages can observe various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in front of our cameras. We hope you will enjoy watching closely and explore animals’ behavior and habitats! Note: animals are not always on view on cameras, so please check back if you don't see anything.</p>
+                  </div>
+                  <div class="block-welcome__top-b-image">
+                     <img src="assets/images/Group 11.png" alt="image">
+                  </div>
+               </div>
+   
+               <div class="block-welcome__bottom-block">
+                  <div class="block-welcome__bottom-b-image">
+                     <img src="assets/images/Group 12.png" alt="image">
+                  </div>
+                  <div class="block-welcome__bottom-b-text">
+                     <h2 class="block-welcome__top-b-t-title">How we work</h2>
+                     <p class="block-welcome__top-b-t-paragraph">Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild animals in our zoo and worldwide. Every day, our experts work to safeguard the health and wellness of the animals. To continue these efforts, we need your help. We're so grateful to our numerous supporters. All donations, large and small, go a long way to the conservation efforts of our pets.</p>
+                  </div>
+               </div>
+            </div>
+
+            <footer class="block-welcome__footer">
+               <div class="block-welcome__footer-wrapper">
+                  <div class="block-welcome__foot-block-left">
+                     <h3 class="block-welcome__foot-b-l-title">Your donation makes a difference! </h3>
+                     <p class="block-welcome__foot-b-l-paragraph">The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to watch your favourite animals — live, 24/7!</p>
+                  </div>
+                  <div class="block-welcome__foot-block-right">
+                     <p>Quick Donate</p>
+                     <form class="danat-button">
+                        <div class="dollar">$</div>
+                        <input class="money" type="number" max="9999" placeholder="Donation Amount">
+                        <input class="orange-arrow" type="submit" value="">
+                     </form>
+                     
+                  </div>
+               </div>
+            </footer>
+
+         </section>
+
+         <!-- блок Pets(ширина 100%) -->
+         <section class="block-pets">
+
+            <!-- обертка блока Pets(ширина 1400px) -->
+            <div class="block-pets-inner-wrapper">
+
+               <!-- блок основного текста -->
+               <div class="block-pets__b-text">
+                  <h2 class="block-pets__b-t-title">meet some our Pets</h2>
+                  <p class="block-pets__b-t-paragraph">Do you have a special place in your heart for animals? Who are your favorites? Perhaps you'd like to donate to special ones or all our pets? We think it's important for you to choose how your donation is used.</p>
+               </div>
+
+               <!-- основной блок слайдера -->
+               <div class="block-pets__block-slider">
+
+                  <!-- блок стрелок -->
+                  <div class="block-pets__b-s-block-arrow">
+                     <!-- левая стрелка -->
+                     <div class="square-arrow-dark block-pets__arrow_left">
+                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9318 0.119971C12.1139 0.199174 12.2794 0.315255 12.4187 0.461565C12.5583 0.607505 12.6691 0.780876 12.7446 0.971748C12.8202 1.16262 12.8591 1.36724 12.8591 1.57389C12.8591 1.78055 12.8202 1.98517 12.7446 2.17604C12.6691 2.36691 12.5583 2.54028 12.4187 2.68622L6.39097 9H23.5416C23.9659 9 24.3729 9.21071 24.673 9.58579C24.973 9.96086 25.1416 10.4696 25.1416 11C25.1416 11.5304 24.973 12.0391 24.673 12.4142C24.3729 12.7893 23.9659 13 23.5416 13H6.39018L12.4187 19.3146C12.7002 19.6096 12.8584 20.0097 12.8584 20.4269C12.8584 20.8441 12.7002 21.2443 12.4187 21.5393C12.1371 21.8343 11.7553 22 11.3571 22C10.959 22 10.5771 21.8343 10.2956 21.5393L1.29962 12.1127C1.15999 11.9668 1.04921 11.7934 0.973627 11.6026C0.898043 11.4117 0.859135 11.2071 0.859135 11.0004C0.859135 10.7938 0.898043 10.5891 0.973627 10.3983C1.04921 10.2074 1.15999 10.034 1.29962 9.88808L10.2956 0.461565C10.4349 0.315255 10.6003 0.199174 10.7825 0.119971C10.9646 0.0407677 11.1599 0 11.3571 0C11.5543 0 11.7496 0.0407677 11.9318 0.119971Z" fill="#20113D"/>
+                        </svg>
+                     </div>
+                     <!-- правая стрелка -->
+                     <div class="square-arrow-dark block-pets__arrow_right">
+                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="#20113D"/>
+                        </svg>
+                     </div>
+                  </div>
+
+                  <!-- блок с видимой частью верхняя часть -->
+                  <div class="block-pets__block-images-com">
+                     <!-- внутренняя обертка(часть из нее скрыта) -->
+                     <div class="block-pets__block-img-inner-wrap">
+
+                        <!-- 1-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="pages/html-files/Zoos-page-panda.html">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Lucas</p>
+                              <div class="wrap-img">
+                                 <img src="assets/images/Rectangle39.png" alt="panda">
+                              </div>
+                           </div>
+                           <!-- блок с текстом -->
+                           <span class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">Giant Panda</p>
+                              <p class="block-pets__b-i-bottom">Native to central China, giant pandas have come to symbolize vulnerable species.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM 
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </span>
+                        </a>
+                        <!-- 2-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="pages/html-files/Zoos-page-lemurs.html">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Andy</p>
+                              <div class="wrap-img">
+                                 <img src="assets/images/image 118.png" alt="Lemur">
+                              </div>
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">Madagascarian Lemur </p>
+                              <p class="block-pets__b-i-bottom">Lemurs are considered the world’s most endangered group of mammals.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+                        <!-- 3-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="pages/html-files/Zoos-page-gorillas.html">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Glen</p>
+                              <div class="wrap-img">
+                                 <img src="assets/images/Rectangle 39 (1).png" alt="Gorilla">
+                              </div>
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">Gorilla in Congo </p>
+                              <p class="block-pets__b-i-bottom">Variety of snacks very important for the healthy life of gorillas and his plenty of babies.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+                        <!-- 4-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="#">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Mike</p>
+                              <div class="wrap-img">
+                                 <img src="assets/images/Rectangle 39 (2).png" alt="Alligator">
+                              </div>
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">Chinese Alligator</p>
+                              <p class="block-pets__b-i-bottom">From nose to tail, belly to back, hard scales protect this petite alligator.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+
+                     </div>
+                  </div>
+
+                  <!-- блок с видимой частью нижняя часть -->
+                  <div class="block-pets__block-images-com uninstile">
+                     <!-- внутренняя обертка(часть из нее скрыта) -->
+                     <div class="block-pets__block-img-inner-wrap">
+                        
+                        <!-- 1-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="pages/html-files/Zoos-page-eagles.html">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Sam & Lora</p>
+                              <img src="assets/images/image 117.png" alt="eagles">
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">West End Bald Eagles</p>
+                              <p class="block-pets__b-i-bottom">Pair of eagle parents lay and protect eggs, feed their chicks and teach them to hunt and fly.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+                        <!-- 2-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="#">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Liz</p>
+                              <img src="assets/images/image 122.png" alt="koala">
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">Australian Koala</p>
+                              <p class="block-pets__b-i-bottom">The elevated walkways bring you to eye level with the koalas as they perch in their forest.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+                        <!-- 3-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="#">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Shake</p>
+                              <img src="assets/images/image 121.png" alt="lion">
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">African Lion</p>
+                              <p class="block-pets__b-i-bottom">Lions roam the savannas and grasslands of Africa, hunting and raising cubs in the pride.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+                        <!-- 4-блок с животным и его кличкой -->
+                        <a class="block-pets__block-img" href="#">
+                           <!-- блок с изображением -->
+                           <div class="block-pets__b-i-image">
+                              <p class="block-pets__b-i-i-name">Senja</p>
+                              <img src="assets/images/Animals Card (1).png" alt="tiger">
+                           </div>
+                           <!-- блок с текстом -->
+                           <div class="block-pets__b-i-text">
+                              <p class="block-pets__b-i-t-top">Sumatran Tiger</p>
+                              <p class="block-pets__b-i-bottom">Sumatran Tigers are the smallest of the five sub-species, and are found in Indonesia.</p>
+                              <p class="text-link-arrow">VIEW LIVE CAM
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </a>
+
+                     </div>
+                  </div>
+
+               </div>
+                
+               <!-- блок с кнопкой -->
+               <div class="block-pets__block-button">
+                  <a class="transporent-button-dark" href="pages/html-files/Map-page.html">choose your favourite
+                     <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="#20113D"/>
+                     </svg>
+                  </a>
+               </div>
+
+            </div>
+
+         </section>
+
+         <!-- блок pay-and-feed(ширина 100%) -->
+         <section class="block-pay-and-feed">
+
+            <!-- обертка блока pay-and-feed(ширина 1400px) -->
+            <div class="block-pay-and-feed__inner-wrapper">
+               <!-- блок заголовка -->
+               <div class="block-pay-and-feed__block-title">
+                  <h2>PAY AND FEED</h2>
+               </div>
+               <!-- блок 01 -->
+               <div class="block-pay-and-feed__block-123">
+                  <!-- блок с номером и линией -->
+                  <div class="block-pay-and-feed__block-number-line">
+                     <p class="block-pay-and-feed__number">01</p>
+                     <div class="block-pay-and-feed__line"><span class="line-center"></span></div>
+                  </div>
+                  <!-- блок с изображением и блоком с текстом -->
+                  <div class="block-pay-and-feed__block-img-text">
+                     <div class="block-pay-and-feed__block-img">
+                        <img src="assets/images/Rectangle 36.png" alt="monkey">
+                     </div>
+                     <div class="block-pay-and-feed__block-text">
+                        <img src="assets/images/Vector.png" alt="image">
+                        <p class="block-pay-and-feed__title">Your donation has an impact</p>
+                        <p class="block-pay-and-feed__paragraph">Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating. The generosity of people like you can help us make sure that our animals enjoy good food that keeps them in great condition.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- блок 02 -->
+               <div class="block-pay-and-feed__block-123">
+                  <!-- блок с номером и линией -->
+                  <div class="block-pay-and-feed__block-number-line">
+                     <p class="block-pay-and-feed__number">02</p>
+                     <div class="block-pay-and-feed__line"><span class="line-center"></span></div>
+                  </div>
+                  <!-- блок с изображением и блоком с текстом -->
+                  <div class="block-pay-and-feed__block-img-text">
+                     <div class="block-pay-and-feed__block-img">
+                        <img src="assets/images/Rectangle 37.png" alt="food">
+                     </div>
+                     <div class="block-pay-and-feed__block-text">
+                        <img src="assets/images/Union.png" alt="image">
+                        <p class="block-pay-and-feed__title">Make a donation</p>
+                        <p class="block-pay-and-feed__paragraph">You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the pet's name if needed. One of the most effective ways you can give is by making regular donations.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- блок 03 -->
+               <div class="block-pay-and-feed__block-123">
+                  <!-- блок с номером и линией -->
+                  <div class="block-pay-and-feed__block-number-line">
+                     <p class="block-pay-and-feed__number">03</p>
+                     <div class="block-pay-and-feed__line"><span class="line-center"></span></div>
+                  </div>
+                  <!-- блок с изображением и блоком с текстом -->
+                  <div class="block-pay-and-feed__block-img-text">
+                     <div class="block-pay-and-feed__block-img">
+                        <img src="assets/images/Rectangle 38.png" alt="animal">
+                     </div>
+                     <div class="block-pay-and-feed__block-text">
+                        <img src="assets/images/outline 1.png" alt="image">
+                        <p class="block-pay-and-feed__title">Bring your food charity — straight to your favorites pets.</p>
+                        <p class="block-pay-and-feed__paragraph">After your donation, the animal receives its favorite foods. You can support your favorite animals or any animal you care about and make a real personal impact. Never doubt that your donation can make a difference even if it is small. </p>
+                        <!-- блок с кноакой -->
+                        <div class="block-pay-and-feed__block-button">
+                           <a class="orange-button" href="#">donate now
+                              <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="white"/>
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+
+            </div>
+
+         </section>
+
+         <!-- блок block-users(ширина 100%) -->
+         <section class="block-users">
+
+            <!-- обертка блока block-users(ширина 1400px) -->
+            <div class="block-users__inner-wrapper">
+
+               <!-- блок с текстом и слайдером -->
+               <div class="block-users__text-slider">
+
+                  <!-- блок с текстом -->
+                  <div class="block-users__block-text">
+                     <div class="block-users__title">what our users think</div>
+                     <div class="block-users__paragraph">We are continuously striving to improve the experiences of our future guests. Below you can leave your own feedback, or simply view feedback from past clients. </div>
+                  </div>
+
+                  <!-- блок слайдер(видимая часть) -->
+                  <div class="block-users__block-slider">
+                     <!-- обертка(часть скрыта) -->
+                     <div class="block-users__slider-inner-wrapper">
+
+                        <!-- блок -->
+                        <div class="block-users__slider-block">
+                           <!-- подблок -->
+                           <div class="block-users__subblock">
+                              <div class="block-users__quotes">
+                                 <img src="assets/images/“.png" alt="quotes">
+                              </div>
+                              <div class="block-users__title">New Jersey, June 2020</div>
+                              <div class="block-users__paragraph">I am writing to thank you for your mission is to bring people closer to nature! Like myself, children were very impressed by the opportunity to explore the life of incredible animals in real-time. </div>
+                              <a class="block-users__bottom-link" href="#">Karen Maithlan</a>
+                           </div>
+                           <!-- подблок -->
+                           <div class="block-users__subblock">
+                              <div class="block-users__quotes">
+                                 <img src="assets/images/“.png" alt="">
+                              </div>
+                              <div class="block-users__title">London, February 2020</div>
+                              <div class="block-users__paragraph">A fantastic experience for kids and adults alike! If anyone is looking for an attraction that educates people on wild animals – it's for you! I highly recommend seeing for yourself the variety of animals on your screen.</div>
+                              <a class="block-users__bottom-link" href="#">C. Stockman</a>
+                           </div>
+                        </div>
+                        <!-- блок -->
+                        <div class="block-users__slider-block">
+                           <!-- подблок -->
+                           <div class="block-users__subblock">
+                              <div class="block-users__quotes">
+                                 <img src="assets/images/“.png" alt="quotes">
+                              </div>
+                              <div class="block-users__title">Toronto, November 2020</div>
+                              <div class="block-users__paragraph">We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our understanding of the animal kingdom.</div>
+                              <a class="block-users__bottom-link" href="#">Carol Larsen</a>
+                           </div>
+                           <!-- подблок -->
+                           <div class="block-users__subblock">
+                              <div class="block-users__quotes">
+                                 <img src="assets/images/“.png" alt="">
+                              </div>
+                              <div class="block-users__title">Amsterdam, June 2020</div>
+                              <div class="block-users__paragraph">I want to thank you for the amazing sites you find to put your cameras to let each of us see things that we would probably never see on our own. There are so many positives on Zoo Online and I'm grateful for it. Thank you so much!</div>
+                              <a class="block-users__bottom-link" href="#">Tomas Ray</a>
+                           </div>
+                        </div>
+                        <!-- блок -->
+                        <div class="block-users__slider-block">
+                           <!-- подблок -->
+                           <div class="block-users__subblock">
+                              <div class="block-users__quotes">
+                                 <img src="assets/images/“.png" alt="quotes">
+                              </div>
+                              <div class="block-users__title">Toronto, November 2020</div>
+                              <div class="block-users__paragraph">We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our understanding of the animal kingdom.</div>
+                              <a class="block-users__bottom-link" href="#">Carol Larsen</a>
+                           </div>
+                           <!-- подблок -->
+                           <div class="block-users__subblock">
+                              <div class="block-users__quotes">
+                                 <img src="assets/images/“.png" alt="">
+                              </div>
+                              <div class="block-users__title">Amsterdam, June 2020</div>
+                              <div class="block-users__paragraph">I want to thank you for the amazing sites you find to put your cameras to let each of us see things that we would probably never see on our own. There are so many positives on Zoo Online and I'm grateful for it. Thank you so much!</div>
+                              <a class="block-users__bottom-link" href="#">Tomas Ray</a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- блок со стрелками -->
+                     <div class="block-users__block-arrows">
+                        <div class="block-users__block-arrows-wrap">
+                           <!-- левая стрелка -->
+                           <div class="square-arrow-white block-users__arrow_left">
+                              <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9318 0.119971C12.1139 0.199174 12.2794 0.315255 12.4187 0.461565C12.5583 0.607505 12.6691 0.780876 12.7446 0.971748C12.8202 1.16262 12.8591 1.36724 12.8591 1.57389C12.8591 1.78055 12.8202 1.98517 12.7446 2.17604C12.6691 2.36691 12.5583 2.54028 12.4187 2.68622L6.39097 9H23.5416C23.9659 9 24.3729 9.21071 24.673 9.58579C24.973 9.96086 25.1416 10.4696 25.1416 11C25.1416 11.5304 24.973 12.0391 24.673 12.4142C24.3729 12.7893 23.9659 13 23.5416 13H6.39018L12.4187 19.3146C12.7002 19.6096 12.8584 20.0097 12.8584 20.4269C12.8584 20.8441 12.7002 21.2443 12.4187 21.5393C12.1371 21.8343 11.7553 22 11.3571 22C10.959 22 10.5771 21.8343 10.2956 21.5393L1.29962 12.1127C1.15999 11.9668 1.04921 11.7934 0.973627 11.6026C0.898043 11.4117 0.859135 11.2071 0.859135 11.0004C0.859135 10.7938 0.898043 10.5891 0.973627 10.3983C1.04921 10.2074 1.15999 10.034 1.29962 9.88808L10.2956 0.461565C10.4349 0.315255 10.6003 0.199174 10.7825 0.119971C10.9646 0.0407677 11.1599 0 11.3571 0C11.5543 0 11.7496 0.0407677 11.9318 0.119971Z" fill="#20113D"/>
+                              </svg>
+                           </div>
+                           <!-- правая стрелка -->
+                           <div class="square-arrow-white block-users__arrow_right">
+                              <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="#20113D"/>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     
+
+                  </div>
+                  <!-- Блок с точками при 320px -->
+                  <div class="block-users__block-dot-320">
+                     <ul class="block-users__block-inner-dot">
+                        <li class="dot dot-1"></li>
+                        <li class="dot dot-2"></li>
+                        <li class="dot dot-3"></li>
+                        <li class="dot dot-4"></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- блок с кнопкой -->
+               <div class="block-users__block-button">
+                  <a class="transporent-button-white" href="#">leave feedback
+                     <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="#20113D"/>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            
+         </section>
+
+         <!-- блок love(ширина 100%) -->
+         <section class="block-love">
+
+            <!-- обертка блока block-users(ширина 1400px) -->
+            <div class="block-love__inner-wrapper">
+
+               <!-- блок с заголовком и текстом -->
+               <div class="love__block-title-text">
+                  <h2 class="love__title">care for the animals you love</h2>
+                  <p class="love__paragraph">You can help to look after the animals you love with your gift today
+                  </p>
+               </div>
+
+               <!-- блок с животными -->
+               <div class="love__block-animals-feed">
+                  <!-- внутрянняя обертка -->
+                  <div class="animals-feed__inner-wrap">
+                     <!-- Широкая картинка -->
+                     <div class="love__bg-image">
+                        <img src="assets/images/koala.png" alt="animal">
+                     </div>   
+
+                     <!-- блок покарми животных (Панда) -->
+                     <a class="love__block-feed love__panda" href="pages/html-files/Zoos-page-panda.html">
+                        <div class="love__feed-image">
+                           <img src="assets/images/image 144.png" alt="animal">
+                        </div>
+                        <div class="love__feed-text">Your $30 could give Lucas a slice of panda cake, made with our secret recipe.</div>
+                        <div class="love__feed-link">
+                           <p class="text-link-arrow">feed
+                              <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                              </svg>
+                           </p>
+                        </div>
+                        <div class="love__feed-block-text-640px">
+                           <div class="love__feed-text">Your $30 could give Lucas a slice of panda cake, made with our secret recipe.</div>
+                           <div class="love__feed-link">
+                              <p class="text-link-arrow">feed
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                     <!-- блок покарми животных(Тигр) -->
+                     <a class="love__block-feed love__tiger" href="#">
+                        <div class="love__feed-image">
+                           <img src="assets/images/image 156.png" alt="animal">
+                        </div>
+                        <div class="love__feed-text">Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.</div>
+                        <div class="love__feed-link">
+                           <p class="text-link-arrow">feed
+                              <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                              </svg>
+                           </p>
+                        </div>
+                        <div class="love__feed-block-text-640px">
+                           <div class="love__feed-text">Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.</div>
+                           <div class="love__feed-link">
+                              <p class="text-link-arrow">feed
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                     <!-- блок покарми животных(Лемур) -->
+                     <a class="love__block-feed love__lemur" href="pages/html-files/Zoos-page-lemurs.html">
+                        <div class="love__feed-image">
+                           <img src="assets/images/image 155.png" alt="animal">
+                        </div>
+                        <div class="love__feed-text">With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its natural habitat.</div>
+                        <div class="love__feed-link">
+                           <p class="text-link-arrow">feed
+                              <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                              </svg>
+                           </p>
+                        </div>
+                        <div class="love__feed-block-text-640px">
+                           <div class="love__feed-text">With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its natural habitat.</div>
+                           <div class="love__feed-link">
+                              <p class="text-link-arrow">feed
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                     <!-- блок покарми животных(Орлы) -->
+                     <a class="love__block-feed love__eagles" href="pages/html-files/Zoos-page-eagles.html">
+                        <div class="love__feed-image">
+                           <img src="assets/images/image 145.png" alt="animal">
+                        </div>
+                        <div class="love__feed-text">Sam & Lora have hatched and raised numerous young and will be happy with your help.</div>
+                        <div class="love__feed-link">
+                           <p class="text-link-arrow">feed
+                              <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                              </svg>
+                           </p>
+                        </div>
+                        <div class="love__feed-block-text-640px">
+                           <div class="love__feed-text">Sam & Lora have hatched and raised numerous young and will be happy with your help.</div>
+                           <div class="love__feed-link">
+                              <p class="text-link-arrow">feed
+                                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2039 0.24596C14.9987 0.335165 14.8124 0.465905 14.6555 0.630691C14.4982 0.795061 14.3735 0.990325 14.2883 1.2053C14.2032 1.42027 14.1594 1.65074 14.1594 1.88349C14.1594 2.11623 14.2032 2.3467 14.2883 2.56167C14.3735 2.77665 14.4982 2.97191 14.6555 3.13628L21.4444 10.2474H2.12822C1.65029 10.2474 1.19193 10.4847 0.85398 10.9071C0.51603 11.3296 0.326172 11.9025 0.326172 12.4999C0.326172 13.0973 0.51603 13.6703 0.85398 14.0927C1.19193 14.5152 1.65029 14.7525 2.12822 14.7525H21.4453L14.6555 21.8645C14.3384 22.1967 14.1603 22.6474 14.1603 23.1173C14.1603 23.5872 14.3384 24.0378 14.6555 24.3701C14.9726 24.7023 15.4027 24.889 15.8511 24.889C16.2995 24.889 16.7296 24.7023 17.0467 24.3701L27.1786 13.7532C27.3359 13.5888 27.4607 13.3935 27.5458 13.1786C27.6309 12.9636 27.6748 12.7331 27.6748 12.5004C27.6748 12.2676 27.6309 12.0372 27.5458 11.8222C27.4607 11.6072 27.3359 11.412 27.1786 11.2476L17.0467 0.630691C16.8898 0.465905 16.7034 0.335165 16.4983 0.24596C16.2931 0.156756 16.0732 0.11084 15.8511 0.11084C15.629 0.11084 15.409 0.156756 15.2039 0.24596Z" fill="#F58021"/>
+                                 </svg>
+                              </p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+
+                  
+               </div>
+
+               <!-- Блок с точками при 640px -->
+               <div class="love__block-dot">
+                  <ul class="love__block-inner-dot">
+                     <li class="dot dot-1"></li>
+                     <li class="dot dot-2"></li>
+                     <li class="dot dot-3"></li>
+                     <li class="dot dot-4"></li>
+                  </ul>
+               </div>
+
+               <!-- блок с кнопкой -->
+
+               <div class="love__block-button">
+                  <a class="transporent-button-dark" href="pages/html-files/Map-page.html">choose your favourite
+                     <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="#20113D"/>
+                     </svg>
+                  </a>
+               </div>
+
+               <!-- блок с фото животного -->
+               <div class="love__block-photo">
+                  <img src="assets/images/Touch the animal2 1.png" alt="image">
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- --------------------------- Подвал ---------------------------- -->
+      <footer>
+         <!-- обертка блока inner-footer(ширина 1400px) -->
+         <div class="inner-footer">
+            <!-- блок с сайтами -->
+            <div class="inner-footer__sites">
+               <div class="inner-footer__block-lable">
+                  <a href="#" class="inner-footer__oline-zoo inner-footer__com" title="Online Zoo"><img src="assets/images/Logo1.png" alt="logo"></a>
+                  <a href="#" class="inner-footer__yem-digital inner-footer__com" title="Yem Digital"><img src="assets/images/Yem Digital.png" alt="logo"></a>
+                  <a href="#" class="inner-footer__rsschool inner-footer__com" title="Rolling Scopes"><img src="assets/images/rs_school_js logo.png" alt="logo"></a>
+               </div>
+               <!-- навигация -->
+               <nav class="inner-footer__block-links">
+                  <ul>
+                     <li class="link"><a href="index.html">About</a></li>
+                     <li class="link"><a href="pages/html-files/Map-page.html">map</a></li>
+                     <li class="link"><a href="pages/html-files/Zoos-page-panda.html">Zoos</a></li>
+                     <li class="link"><a href="pages/html-files/Contact-us.html">Contact us</a></li>
+                  </ul>
+               </nav>
+               <!-- блок с кнопкой -->
+               <div class="inner-footer__block-button">
+                  <a class="transporent-button-white" href="#">donate for volunteers
+                     <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0682 0.119971C13.8861 0.199174 13.7206 0.315255 13.5813 0.461565C13.4417 0.607505 13.3309 0.780876 13.2554 0.971748C13.1798 1.16262 13.1409 1.36724 13.1409 1.57389C13.1409 1.78055 13.1798 1.98517 13.2554 2.17604C13.3309 2.36691 13.4417 2.54028 13.5813 2.68622L19.609 9H2.4584C2.03405 9 1.62709 9.21071 1.32703 9.58579C1.02697 9.96086 0.858398 10.4696 0.858398 11C0.858398 11.5304 1.02697 12.0391 1.32703 12.4142C1.62709 12.7893 2.03405 13 2.4584 13H19.6098L13.5813 19.3146C13.2998 19.6096 13.1416 20.0097 13.1416 20.4269C13.1416 20.8441 13.2998 21.2443 13.5813 21.5393C13.8629 21.8343 14.2447 22 14.6429 22C15.041 22 15.4229 21.8343 15.7044 21.5393L24.7004 12.1127C24.84 11.9668 24.9508 11.7934 25.0264 11.6026C25.102 11.4117 25.1409 11.2071 25.1409 11.0004C25.1409 10.7938 25.102 10.5891 25.0264 10.3983C24.9508 10.2074 24.84 10.034 24.7004 9.88808L15.7044 0.461565C15.5651 0.315255 15.3997 0.199174 15.2175 0.119971C15.0354 0.0407677 14.8401 0 14.6429 0C14.4457 0 14.2504 0.0407677 14.0682 0.119971Z" fill="#20113D"/>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <!-- блок с копирайтами -->
+            <div class="inner-footer__copiright-social">
+               <div class="inner-footer__block-copiright">
+                  <p>© 2021 DinaK</p>
+                  <p>© Yem Digital</p>
+                  <p>© RSSchool</p>
+               </div>
+                <!-- Блок соц сетей -->
+                <nav>
+                  <ul class="block-social-links">
+                     <!-- иконка YouTube -->
+                     <li class="common-soc-link">
+                        <a href="https://www.youtube.com/">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="20" fill="#FF0000"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3005 12.3781C31.6996 12.7772 31.9872 13.2739 32.1346 13.8187C32.9835 17.2357 32.7873 22.6324 32.1511 26.1813C32.0037 26.7261 31.7161 27.2228 31.317 27.6219C30.9179 28.021 30.4212 28.3086 29.8764 28.456C27.8819 29 19.8544 29 19.8544 29C19.8544 29 11.8269 29 9.8324 28.456C9.28759 28.3086 8.79089 28.021 8.39179 27.6219C7.99269 27.2228 7.70511 26.7261 7.55768 26.1813C6.70383 22.7791 6.9379 17.3791 7.5412 13.8352C7.68862 13.2903 7.97621 12.7936 8.37531 12.3945C8.77441 11.9954 9.2711 11.7079 9.81592 11.5604C11.8104 11.0165 19.8379 11 19.8379 11C19.8379 11 27.8654 11 29.8599 11.544C30.4047 11.6914 30.9014 11.979 31.3005 12.3781ZM23.9423 20L17.283 23.8571V16.1428L23.9423 20Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <!-- иконка Instagram -->
+                     <li class="common-soc-link">
+                        <a href="https://www.instagram.com/">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="20" fill="#C13584"/>
+                              <path d="M20 10.1622C23.2041 10.1622 23.5837 10.1744 24.849 10.2321C26.019 10.2855 26.6544 10.481 27.0773 10.6453C27.6374 10.863 28.0371 11.123 28.457 11.5429C28.877 11.9629 29.137 12.3626 29.3547 12.9227C29.519 13.3456 29.7145 13.981 29.7679 15.1509C29.8256 16.4163 29.8378 16.7958 29.8378 19.9999C29.8378 23.2041 29.8256 23.5836 29.7679 24.849C29.7145 26.019 29.519 26.6543 29.3547 27.0772C29.137 27.6373 28.877 28.0371 28.4571 28.457C28.0371 28.8769 27.6374 29.1369 27.0773 29.3546C26.6544 29.519 26.019 29.7144 24.849 29.7678C23.5839 29.8255 23.2044 29.8378 20 29.8378C16.7956 29.8378 16.4162 29.8255 15.151 29.7678C13.981 29.7144 13.3456 29.519 12.9227 29.3546C12.3626 29.1369 11.9629 28.8769 11.543 28.457C11.1231 28.0371 10.863 27.6373 10.6453 27.0772C10.481 26.6543 10.2855 26.019 10.2321 24.849C10.1744 23.5836 10.1622 23.2041 10.1622 19.9999C10.1622 16.7958 10.1744 16.4163 10.2321 15.1509C10.2855 13.981 10.481 13.3456 10.6453 12.9227C10.863 12.3626 11.123 11.9629 11.543 11.543C11.9629 11.123 12.3626 10.863 12.9227 10.6453C13.3456 10.481 13.981 10.2855 15.151 10.2321C16.4163 10.1744 16.7959 10.1622 20 10.1622ZM20 8C16.741 8 16.3323 8.01381 15.0524 8.07221C13.7752 8.13047 12.9028 8.33334 12.1395 8.62996C11.3504 8.93663 10.6812 9.34694 10.0141 10.0141C9.34695 10.6812 8.93663 11.3504 8.63001 12.1395C8.33334 12.9028 8.13047 13.7751 8.07221 15.0524C8.01381 16.3323 8 16.741 8 19.9999C8 23.259 8.01381 23.6676 8.07221 24.9475C8.13047 26.2248 8.33334 27.0971 8.63001 27.8604C8.93663 28.6495 9.34695 29.3187 10.0141 29.9859C10.6812 30.653 11.3504 31.0633 12.1395 31.3699C12.9028 31.6666 13.7752 31.8694 15.0524 31.9277C16.3323 31.9861 16.741 31.9999 20 31.9999C23.259 31.9999 23.6677 31.9861 24.9476 31.9277C26.2248 31.8694 27.0972 31.6666 27.8605 31.3699C28.6496 31.0633 29.3188 30.653 29.9859 29.9859C30.653 29.3187 31.0634 28.6495 31.37 27.8604C31.6667 27.0971 31.8695 26.2248 31.9278 24.9475C31.9862 23.6676 32 23.259 32 19.9999C32 16.741 31.9862 16.3323 31.9278 15.0524C31.8695 13.7751 31.6667 12.9028 31.37 12.1395C31.0634 11.3504 30.653 10.6812 29.9859 10.0141C29.3188 9.34694 28.6496 8.93663 27.8605 8.62996C27.0972 8.33334 26.2248 8.13047 24.9476 8.07221C23.6677 8.01381 23.259 8 20 8Z" fill="white"/>
+                              <path d="M20.0054 13.8433C16.6021 13.8433 13.8433 16.6021 13.8433 20.0054C13.8433 23.4087 16.6021 26.1675 20.0054 26.1675C23.4087 26.1675 26.1676 23.4087 26.1676 20.0054C26.1676 16.6021 23.4087 13.8433 20.0054 13.8433ZM20.0054 24.0054C17.7963 24.0054 16.0054 22.2145 16.0054 20.0054C16.0054 17.7963 17.7963 16.0054 20.0054 16.0054C22.2146 16.0054 24.0054 17.7963 24.0054 20.0054C24.0054 22.2145 22.2146 24.0054 20.0054 24.0054Z" fill="white"/>
+                              <path d="M27.8507 13.5963C27.8507 14.3915 27.206 15.0363 26.4107 15.0363C25.6154 15.0363 24.9707 14.3915 24.9707 13.5963C24.9707 12.801 25.6154 12.1562 26.4107 12.1562C27.206 12.1562 27.8507 12.801 27.8507 13.5963Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <!-- иконка Facebook -->   
+                     <li class="common-soc-link">  
+                        <a href="https://facebook.com/">
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="20" fill="#3B5998"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M25.315 12.9578C24.6917 12.8331 23.8498 12.74 23.3204 12.74C21.8867 12.74 21.7936 13.3633 21.7936 14.3607V16.1361H25.3774L25.065 19.8137H21.7936V31H17.3063V19.8137H15V16.1361H17.3063V13.8613C17.3063 10.7453 18.7708 9 22.4477 9C23.7252 9 24.6602 9.187 25.8753 9.43633L25.315 12.9578Z" fill="white"/>
+                           </svg>
+                        </a>
+                     </li>
+   
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </footer>
+   </div>
+
+</body>
+</html>
